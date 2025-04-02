@@ -39,7 +39,7 @@ def clear_tc():
 
 
 def shape_upload(rate_kbit):
-    run(f"tc qdisc add dev {INTERFACE} root handle 1: htb default 10")
+    run(f"tc qdisc add dev {INTERFACE} root handle 1: htb default 10 r2q 1")
     run(
         f"tc class add dev {INTERFACE} parent 1: classid 1:10 htb rate {rate_kbit}kbit ceil {rate_kbit}kbit"
     )
