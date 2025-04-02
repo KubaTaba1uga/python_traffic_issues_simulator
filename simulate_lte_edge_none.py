@@ -10,7 +10,7 @@ GPRS = {
     "name": "GPRS",
     "delay": "1000ms",
     "loss": "50%",
-    "rate": "0.1Mbit",
+    "rate": "50Kbit",
     "duration": 10,
 }
 
@@ -18,7 +18,7 @@ EDGE = {
     "name": "EDGE",
     "delay": "800ms",
     "loss": "40%",
-    "rate": "0.1Mbit",
+    "rate": "100Kbit",
     "duration": 10,
 }
 
@@ -26,14 +26,14 @@ THREE_G = {
     "name": "3G",
     "delay": "600ms",
     "loss": "30%",
-    "rate": "0.1Mbit",
+    "rate": "50Kbit",
     "duration": 10,
 }
 HSPA = {
     "name": "HSPA",
     "delay": "200ms",
     "loss": "10%",
-    "rate": "1.5Mbit",
+    "rate": "1.Mbit",
     "duration": 10,
 }
 DC_HSPA_PLUS = {
@@ -114,11 +114,10 @@ SCENARIOS = [
     GPRS,
     EDGE,
     THREE_G,
-    HSPA,
     NO_CONN_SMALL,
-    DC_HSPA_PLUS,
-    DC_HSPA_PLUS_42,
-    LTE_CAT4,
+    GPRS,
+    EDGE,
+    THREE_G,
     NO_CONN_BIG,
 ]
 
